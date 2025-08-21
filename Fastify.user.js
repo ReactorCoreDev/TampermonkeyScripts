@@ -17,7 +17,6 @@
             if(_0xtitle==="Install PDF Editor for Google Chrome"){
                 _0xb[_0x1a2b[0]]();
                 _0xb[_0x1a2b[0]]();
-                console[_0x1a2b[5]]("Clicked "+_0xtitle+" twice");
             }
         });
     }
