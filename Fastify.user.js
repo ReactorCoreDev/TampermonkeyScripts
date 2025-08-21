@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Worklink Popup Complete Obfuscated
+// @name         Fastify (Worklink)
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  Adds a side popup to complete worklink (obfuscated)
+// @description  Complete any worklink
 // @author       ReactorCoreDev
 // @match        *://*.work.ink/*
 // @grant        none
