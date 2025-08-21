@@ -1,11 +1,44 @@
 // ==UserScript==
-// @name         Fastify
+// @name         Worklink Popup Complete Obfuscated
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  completes the worklink
+// @description  Adds a side popup to complete worklink (obfuscated)
 // @author       ReactorCoreDev
 // @match        *://*.work.ink/*
 // @grant        none
 // ==/UserScript==
 
-function _0x44c3(){const _0x1cf544=['3695690UwOCAI','button.interestedBtn.button','4258290QjpTHf','querySelector','forEach','.title.svelte-3yab7m','1007268OSZRwp','querySelectorAll','639gmUVSq','3050198slwBCs','215624jHOMVG','div.ocard.curr,\x20div.ocard.next','innerText','click','463376IJpvYA','7130690wwOvqu','4jTIRFf'];_0x44c3=function(){return _0x1cf544;};return _0x44c3();}function _0x25f7(_0x4c1f3b,_0x331490){const _0x44c32f=_0x44c3();return _0x25f7=function(_0x25f751,_0x5619b2){_0x25f751=_0x25f751-0x14f;let _0x17bffa=_0x44c32f[_0x25f751];return _0x17bffa;},_0x25f7(_0x4c1f3b,_0x331490);}(function(_0x10a30,_0x11afb3){const _0x1b11c8=_0x25f7,_0x20433e=_0x10a30();while(!![]){try{const _0x3f46e7=parseInt(_0x1b11c8(0x156))/0x1+parseInt(_0x1b11c8(0x155))/0x2+-parseInt(_0x1b11c8(0x15f))/0x3*(-parseInt(_0x1b11c8(0x15c))/0x4)+parseInt(_0x1b11c8(0x15d))/0x5+parseInt(_0x1b11c8(0x152))/0x6+parseInt(_0x1b11c8(0x15b))/0x7+-parseInt(_0x1b11c8(0x15a))/0x8*(parseInt(_0x1b11c8(0x154))/0x9);if(_0x3f46e7===_0x11afb3)break;else _0x20433e['push'](_0x20433e['shift']());}catch(_0x5ea783){_0x20433e['push'](_0x20433e['shift']());}}}(_0x44c3,0xeda41),(function(){'use strict';setTimeout(()=>{const _0x5821e8=_0x25f7,_0x599558=document[_0x5821e8(0x153)](_0x5821e8(0x157));_0x599558[_0x5821e8(0x150)](_0x3cd58f=>{const _0x2c8161=_0x5821e8,_0x4558fc=_0x3cd58f[_0x2c8161(0x14f)](_0x2c8161(0x151))?.[_0x2c8161(0x158)];if(_0x4558fc==='Install\x20PDF\x20Editor\x20for\x20Google\x20Chrome'){const _0x4f8bdc=_0x3cd58f['querySelector'](_0x2c8161(0x15e));_0x4f8bdc&&(_0x4f8bdc[_0x2c8161(0x159)](),_0x4f8bdc[_0x2c8161(0x159)]());}});},0x3e8);}()));
+(function(){
+    'use strict';
+
+    const _0x1a2b=["click","querySelectorAll",".title.svelte-3yab7m","button.interestedBtn.button","innerText","log","div.ocard.curr, div.ocard.next"];
+    
+    const popup=document.createElement('div');
+    popup.style.position='fixed';
+    popup.style.right='20px';
+    popup.style.top='50%';
+    popup.style.transform='translateY(-50%)';
+    popup.style.backgroundColor='#111';
+    popup.style.color='#fff';
+    popup.style.padding='10px 15px';
+    popup.style.borderRadius='8px';
+    popup.style.boxShadow='0 0 10px rgba(0,0,0,0.5)';
+    popup.style.zIndex='9999';
+    popup.style.cursor='pointer';
+    popup.style.fontFamily='Arial, sans-serif';
+    popup.innerText='Click me to complete worklink';
+    document.body.appendChild(popup);
+
+    function _0xcomplete(){
+        const _0xcards=document[_0x1a2b[1]](_0x1a2b[6]);
+        _0xcards.forEach(_0xc=>{
+            const _0xtitle=_0xc[_0x1a2b[3]](_0x1a2b[2])?.[_0x1a2b[4]];
+            if(_0xtitle==="Install PDF Editor for Google Chrome"){
+                const _0xbtn=_0xc[_0x1a2b[3]](_0x1a2b[3]);
+                if(_0xbtn){_0xbtn[_0x1a2b[0]]();_0xbtn[_0x1a2b[0]]();console[_0x1a2b[5]](`Clicked Accept on "${_0xtitle}" twice.`);}
+            }
+        });
+    }
+
+    popup.addEventListener('click',_0xcomplete);
+})();
